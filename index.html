@@ -42,6 +42,25 @@
       </ul>
     </nav>
 
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Contact Us</h4>
+          </div>
+          <div class="modal-body">
+            <p>Please enter your email and we'll get in touch with you when more information is available.</p>
+            <p><input type="text"></input></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
 
     <!-- Carousel
     ================================================== -->
@@ -50,11 +69,10 @@
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-          <img class="first-slide" src="assets/img/slide1.png" alt="First slide">
+          <img class="first-slide" src="assets/img/s1.png" alt="First slide">
           <div class="container">
             <div class="carousel-caption text-xs-left">
               <h1>Experience the new humanity.</h1>
@@ -71,16 +89,6 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img class="third-slide" src="assets/img/slide3.jpg" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption text-xs-right">
-              <h1>Not just random photos.</h1>
-              <p>These are just random pictures of robots right now, but that's going to change soon. Promise.</p>
-            </div>
-          </div>
-        </div>
-      </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -96,7 +104,7 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
+    <div class="container marketing" style="padding-top: 40px;">
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
@@ -136,7 +144,7 @@
           <p class="lead">There's never been a better time to upgrade your body to a BioChassis. Morningstar Technologies is proud to continue providing mechanical housings that can maintain your brain and your quality of life for decades or even centuries longer than a biological body.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" src="assets/img/robots.jpg" alt="Morningstar Mk V">
+          <img class="featurette-image img-fluid mx-auto" src="assets/img/image0058.png" alt="Morningstar Mk V">
         </div>
       </div>
 
@@ -148,7 +156,7 @@
           <p class="lead">See more, do more, and live longer with the Mk V BioChassis. The Mk V features drastically improved independent operation, including solar charging and water recyclers to allow you to forgo base station visits for up to a month. Wherever your ideas take you, it'll get you there in comfort and safety.</p>
         </div>
         <div class="col-md-5 pull-md-7">
-          <img class="featurette-image img-fluid mx-auto" src="assets/img/outdoors.jpg" alt="Morningstar Mk V">
+          <img class="featurette-image img-fluid mx-auto" src="assets/img/lifesty.png" alt="Morningstar Mk V">
         </div>
       </div>
 
@@ -172,7 +180,7 @@
           <p class="lead">We've perfected the latest generation of digital sensory interfaces. Enjoy perfect vision, augmented with the thermal and infrared spectrums. Discover what it means to feel over 15 new senses through your Mk V chassis.</p>
         </div>
         <div class="col-md-5 pull-md-7">
-          <img class="featurette-image img-fluid mx-auto" src="assets/img/filler.png" alt="Morningstar Mk V">
+          <img class="featurette-image img-fluid mx-auto" src="assets/img/nightvis.jpg" alt="Morningstar Mk V">
         </div>
       </div>
 
@@ -218,7 +226,7 @@
           </ul>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" src="assets/brand/logo.png" alt="Morningstar Mk V">
+          <img class="featurette-image img-fluid mx-auto" src="assets/img/metal_logo.png" alt="Morningstar Mk V">
         </div>
       </div>
 
@@ -234,7 +242,7 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
-            <img class="img-circle" src="assets/brand/logo.svg" alt="Morningstar Mk V" width="140" height="140">
+            <img class="img-circle" src="assets/img/smiles.png" alt="Morningstar Mk V" width="140" height="140">
             <h2>Personal</h2>
             <p>Experience the new humanity. </p>
             <ul style="text-align: left">
@@ -243,10 +251,10 @@
               <li>For new customers, purchase includes complete transitionary service, including two weeks of acclimatization therapy.</li>
               <li>Mk III and Mk IV customers may order the Mk V at a reduced rate, including three days of acclimatization.</li>
             </ul>
-            <p><a class="btn btn-secondary" href="#" role="button">Preorder &raquo;</a></p>
+            <p><a class="btn btn-secondary" data-toggle="modal" data-target="#myModal" role="button">Preorder &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="img-circle" src="assets/brand/logo.svg" alt="Morningstar Mk V" width="140" height="140">
+            <img class="img-circle" src="assets/img/industry.png" alt="Morningstar Mk V" width="140" height="140">
             <h2>Professional</h2>
             <p>Business, beyond limitations</p>
             <ul style="text-align: left">
@@ -255,10 +263,10 @@
               <li>Available prefab units include: extreme heavy-lift chassis; rad-hard chassis; thermally/electrically insulated chassis; high-pressure welding chassis</li>
               <li>Advanced customization is available on a contractual basis for bulk customers.</li>
             </ul>
-            <p><a class="btn btn-secondary" href="#" role="button">Get a quote &raquo;</a></p>
+            <p><a class="btn btn-secondary" data-toggle="modal" data-target="#myModal" role="button">Get a quote &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="img-circle" src="assets/brand/logo.svg" alt="Morningstar Mk V" width="140" height="140">
+            <img class="img-circle" src="assets/img/mil.png" alt="Morningstar Mk V" width="140" height="140">
             <h2>Military<span class="text-muted">*</span></h2>
             <p>Service to a higher standard</p>
             <ul style="text-align: left">
@@ -266,7 +274,7 @@
               <li>Upgraded environmental sensors and endurance provide a significant tactical advantage over previous generations of military units.</li>
               <li>Access to chassis motor functions and sensor data remotely via optical link allows officers to manage their command like never before.</li>
             </ul>
-            <p><a class="btn btn-secondary" href="#" role="button">Get a quote &raquo;</a></p>
+            <p><a class="btn btn-secondary" data-toggle="modal" data-target="#myModal" role="button">Get a quote &raquo;</a></p>
             <p><small class="text-muted">*By international law, military units are available exclusively to members of the NATO council of 2020.</small></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
